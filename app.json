@@ -1,6 +1,8 @@
 {
   "name": "lp-parse-template",
+  "description":"Launchpeer bare bones parse server with dashboard.",
   "keywords": ["node", "express", "parse"],
+  "repository":"https://github.com/liltimtim/LP-Parse-Server-Template",
   "env": {
     "PARSE_SERVER_MOUNT": {
       "description": "Configure Parse API route.",
