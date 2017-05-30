@@ -2,23 +2,37 @@
   "name": "Launchpeer Parse Server Template",
   "keywords": ["node", "express", "parse"],
   "env": {
-    "PARSE_MOUNT": {
+    "PARSE_SERVER_MOUNT": {
       "description": "Configure Parse API route.",
       "value": "/parse"
     },
-    "APP_ID": {
+    "PARSE_APP_ID": {
       "description": "A unique identifier for your app.",
       "value": "myAppId"
     },
-    "MASTER_KEY": {
+    "PARSE_MASTER_KEY": {
       "description": "A key that overrides all permissions. Keep this secret.",
       "value": "myMasterKey"
     },
-    "SERVER_URL": {
+    "PARSE_SERVER_URL": {
       "description": "URL to connect to your Heroku instance (update with your app's name + PARSE_MOUNT)",
       "value": "http://yourappname.herokuapp.com/parse"
+    },
+    "PARSE_DASHBOARD_APP_NAME": {
+      "description":"",
+      "value":"http://yourappname.herokuapp.com/parse"
+    },
+    "PARSE_ADMIN_DASHBOARD_USERNAME": {
+      "description":"",
+      "value":"admin"
+    },
+    "PARSE_ADMIN_DASHBOARD_PASSWORD": {
+      "description":"",
+      "value":"password"
     }
   },
   "image": "heroku/nodejs",
   "addons": ["mongolab"]
 }
+
+    
