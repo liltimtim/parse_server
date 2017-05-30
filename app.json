@@ -32,10 +32,7 @@
     }
   },
   "image": "heroku/nodejs",
-  "addons": [{
-    "plan":"mongolab:sandbox",
-    "as":"MONGO"
-  }]
+  "addons": ["mongolab:sandbox"]
 }
 
     
