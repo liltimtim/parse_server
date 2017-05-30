@@ -21,15 +21,15 @@
       "value": "https://yourappname.herokuapp.com/parse"
     },
     "PARSE_DASHBOARD_APP_NAME": {
-      "description":"",
+      "description":"replace 'yourappname' with the name you defined for your heroku deploy.",
       "value":"https://yourappname.herokuapp.com/parse"
     },
     "PARSE_ADMIN_DASHBOARD_USERNAME": {
-      "description":"",
+      "description":"Username for the parse dashboard.  Allows administrative access to your database.",
       "value":"admin"
     },
     "PARSE_ADMIN_DASHBOARD_PASSWORD": {
-      "description":"",
+      "description":"Password for the admin account for your parse dashboard",
       "value":"password"
     }
   },
