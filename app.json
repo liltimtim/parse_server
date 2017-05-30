@@ -1,6 +1,6 @@
 {
   "name": "lp-parse-template",
-  "description":"Launchpeer bare bones parse server with dashboard.  You may access your dashboard at https://yourappname.herokuapp.com/dashboard",
+  "description":"Launchpeer bare bones parse server with dashboard.  You may access your dashboard at /dashboard",
   "keywords": ["node", "express", "parse"],
   "repository":"https://github.com/liltimtim/LP-Parse-Server-Template",
   "env": {
