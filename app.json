@@ -1,5 +1,5 @@
 {
-  "name": "Launchpeer Parse Server Template",
+  "name": "lp-parse-template",
   "keywords": ["node", "express", "parse"],
   "env": {
     "PARSE_SERVER_MOUNT": {
