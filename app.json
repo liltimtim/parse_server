@@ -35,8 +35,7 @@
   },
   "image": "heroku/nodejs",
   "addons": [{
-    "plan": "mongolab:sandbox",
-    "as": "MONGODB_URI"
+    "plan": "mongolab:sandbox"
   }]
 }
 
