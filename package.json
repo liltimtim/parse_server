@@ -18,6 +18,7 @@
   "homepage": "https://github.com/liltimtim/LP-Parse-Server-Template#readme",
   "dependencies": {
     "express": "^4.15.3",
+    "parse": "^1.9.2",
     "parse-dashboard": "^1.0.26",
     "parse-server": "^2.4.2",
     "path": "^0.12.7"
