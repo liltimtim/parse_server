@@ -35,6 +35,26 @@
     "PARSE_CLIENT_KEY": {
       "description":"The key used to connect to your server by clients.",
       "value":"some_key_generated"
+    },
+    "GCM_SENDER_ID": {
+      "description":"Sender ID assigned to you via Firebase Console.",
+      "value":"abc123"
+    },
+    "GCM_API_KEY": {
+      "description":"API key from Firebase API",
+      "value":"abc123"
+    },
+    "APPLE_BUNDLE_ID": {
+      "description":"The bundle identifier used with your apple application example: com.myapp.ios",
+      "value":"com.lp.example.app"
+    },
+    "APNS_PASSPHRASE": {
+      "description":"When exporting .p12 files for push certificates, you can set a password on the file.  This is that password.",
+      "value":"password"
+    },
+    "APNS_PUSH_PRODUCTION": {
+      "description":"Tells the server to use either sandbox push certs or production.  You should set to true if deploying to production.",
+      "value":false
     }
   },
   "image": "heroku/nodejs",
