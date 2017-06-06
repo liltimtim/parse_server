@@ -20,7 +20,8 @@ const options = {
     databaseURI: config.MONGODB_URI,
     appId: config.PARSE_APP_ID,
     masterKey: config.PARSE_MASTER_KEY,
-    serverURL: config.PARSE_SERVER_URL
+    serverURL: config.PARSE_SERVER_URL,
+    clientKey: config.P
 }
 const api = new ParseServer(options);
 const dashboard = new ParseDashboard({

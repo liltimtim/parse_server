@@ -32,7 +32,7 @@
       "description":"Password for the admin account for your parse dashboard",
       "value":"password"
     },
-    "CLIENT_KEY": {
+    "PARSE_CLIENT_KEY": {
       "description":"The key used to connect to your server by clients.",
       "value":"some_key_generated"
     }
