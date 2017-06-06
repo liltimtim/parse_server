@@ -33,7 +33,7 @@
       "value":"password"
     },
     "CLIENT_KEY": {
-      "description":"The key used to connect to your server by clients."
+      "description":"The key used to connect to your server by clients.",
       "value":"some_key_generated"
     }
   },
