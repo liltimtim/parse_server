@@ -5,11 +5,11 @@
   "repository":"https://github.com/liltimtim/LP-Parse-Server-Template",
   "env": {
     "PARSE_SERVER_MOUNT": {
-      "description": "Configure Parse API route.",
+      "description": "Configure Parse API route. usually its /parse but can be anything just include a /the-name.",
       "value": "/parse"
     },
     "PARSE_APP_ID": {
-      "description": "A unique identifier for your app.",
+      "description": "This value MUST match your heroku app name.",
       "value": "myAppId"
     },
     "PARSE_MASTER_KEY": {
