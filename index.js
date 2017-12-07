@@ -54,7 +54,9 @@ const dashboard = new ParseDashboard({
             serverURL: config.PARSE_SERVER_URL,
             appId: config.PARSE_APP_ID,
             masterKey: config.PARSE_MASTER_KEY,
-            appName: config.PARSE_DASHBOARD_APP_NAME
+            appName: config.PARSE_DASHBOARD_APP_NAME,
+            javascriptKey: config.PARSE_CLIENT_KEY,
+            clientKey: config.PARSE_CLIENT_KEY
         }
     ],
     users: [
@@ -64,8 +66,7 @@ const dashboard = new ParseDashboard({
         }
     ]
 }, {
-    // allows dashboard to be accessible outside of localhost boxes
-    allowsInsecureHTTP: true
+    allowInsecureHTTP: true
 });
 // server up parse api
 app.use(config.PARSE_SERVER_MOUNT, api);
