@@ -54,7 +54,7 @@
     },
     "APNS_PUSH_PRODUCTION": {
       "description":"Tells the server to use either sandbox push certs or production.  You should set to true if deploying to production.",
-      "value":false
+      "value":"false"
     }
   },
   "image": "heroku/nodejs",
