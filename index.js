@@ -48,6 +48,8 @@ const options = {
     }
 }
 const api = new ParseServer(options);
+// supportedPushLocales added due to this issue: https://github.com/parse-community/parse-dashboard/issues/811
+// waiting for fix to upgrade to newest package
 const dashboard = new ParseDashboard({
     apps: [
         {
@@ -56,7 +58,8 @@ const dashboard = new ParseDashboard({
             masterKey: config.PARSE_MASTER_KEY,
             appName: config.PARSE_DASHBOARD_APP_NAME,
             javascriptKey: config.PARSE_CLIENT_KEY,
-            clientKey: config.PARSE_CLIENT_KEY
+            clientKey: config.PARSE_CLIENT_KEY,
+            supportedPushLocales: []
         }
     ],
     users: [
