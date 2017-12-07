@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 1337;
 const ParseDashboard = require('parse-dashboard');
 const productionDirectoryLocation = __dirname + '/apns_push_certs/production/apns_production.p12';
 const sandboxDirectoryLocation = __dirname + '/apns_push_certs/sandbox/apns_sandbox.p12';
-console.log(productionDirectoryLocation);
+
 /**
  * Parse server options
  */
@@ -63,7 +63,10 @@ const dashboard = new ParseDashboard({
             pass: config.PARSE_ADMIN_PASSWORD
         }
     ]
-}, true);
+}, {
+    // allows dashboard to be accessible outside of localhost boxes
+    allowsInsecureHTTP: true
+});
 // server up parse api
 app.use(config.PARSE_SERVER_MOUNT, api);
 app.use('/dashboard', dashboard);
