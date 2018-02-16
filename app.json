@@ -55,6 +55,10 @@
     "APNS_PUSH_PRODUCTION": {
       "description":"Tells the server to use either sandbox push certs or production.  You should set to true if deploying to production.",
       "value":"false"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description":"Tells the server to use the dev dependencies when compiling",
+      "value":"false"
     }
   },
   "image": "heroku/nodejs",
