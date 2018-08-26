@@ -20,11 +20,11 @@
   "dependencies": {
     "@types/axios": "^0.14.0",
     "axios": "^0.17.1",
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "https": "^1.0.0",
-    "parse": "^1.11.0",
-    "parse-dashboard": "^1.1.2",
-    "parse-server": "^2.7.1",
+    "parse": "^1.11.1",
+    "parse-dashboard": "^1.2.0",
+    "parse-server": "^2.8.4",
     "path": "^0.12.7"
   },
   "devDependencies": {
