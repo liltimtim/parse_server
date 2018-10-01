@@ -25,27 +25,27 @@ const options = {
     serverURL: config.PARSE_SERVER_URL,
     clientKey: config.PARSE_CLIENT_KEY,
     javascriptKey: config.PARSE_CLIENT_KEY,
-    push: {
-        ios: [
-            //create and support both sandbox and production
-            {
-                pfx:sandboxDirectoryLocation,
-                passphrase: config.APNS_PASSPHRASE,
-                bundleId: config.APPLE_BUNDLE_ID,
-                production: false
-            },
+//     push: {
+//         ios: [
+//             //create and support both sandbox and production
+//             {
+//                 pfx:sandboxDirectoryLocation,
+//                 passphrase: config.APNS_PASSPHRASE,
+//                 bundleId: config.APPLE_BUNDLE_ID,
+//                 production: false
+//             },
 
-            // issue created on github: https://github.com/parse-community/parse-server/issues/3911
-            // setting value to true even though its a production cert crashes server
+//             // issue created on github: https://github.com/parse-community/parse-server/issues/3911
+//             // setting value to true even though its a production cert crashes server
             
-            {
-                pfx:productionDirectoryLocation,
-                passphrase: config.APNS_PASSPHRASE,
-                bundleId: config.APPLE_BUNDLE_ID,
-                production: false
-            }
-        ]
-    }
+//             {
+//                 pfx:productionDirectoryLocation,
+//                 passphrase: config.APNS_PASSPHRASE,
+//                 bundleId: config.APPLE_BUNDLE_ID,
+//                 production: false
+//             }
+//         ]
+//     }
 }
 const api = new ParseServer(options);
 // supportedPushLocales added due to this issue: https://github.com/parse-community/parse-dashboard/issues/811
