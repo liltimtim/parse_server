@@ -1,19 +1,30 @@
-# Installation Instructions
-1. Fork this project
-  * by forking this project you can rename it to whatever you want and if any updates to the original code are made, you can simply do a pull request into your own code in order to get the updated changes. 
-  * to change the name of the repository
-  1. Click "Settings" 
-  2. Top of the settings bar you should see a "rename" section.  Just rename your repo
-2. Commit all files to your git directory
-3. Press deploy button below.  
+# Installation Instructions and Local Development
 
-***
-### Special Considerations
-You will need a credit card on file with Heroku due to the requirements of MongoDB Sandbox
+Run the following in terminal
 
-# LP-Parse-Server-Template
-Quickly deploy a parse server configured for heroku
+`npm install`
 
-To get started, hit the button below and it will deploy your own templated parse server and dashboard.
+next simply run
+
+`npm run start`
+
+This will compile the project and start it on your local machine.
+
+## Local Development Considerations
+
+When developing with Parse Server you must
+
+- **run mongodb locally**
+- Remember your changes to the schema aren't synchronized across databases and any changes made with the dashboard must also be done or transferred over to production
+
+## Parse 3.0.0 Migration Considerations
+
+[New Parse](https://github.com/parse-community/parse-server/blob/master/3.0.0.md) SDK Instructions for migration
+
+# Deploying to Heroku
+
+Simply press the purple button which will deploy from this repo a copy of the server running on Heroku
+
+**Note** you must have a credit card on file with your own Heroku account in order to fully deploy this server. The current configuration **will not charge you** however MongoDB Lab is used.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
