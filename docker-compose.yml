@@ -1,0 +1,26 @@
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "1337:1337"
+    depends_on:
+      - mongo
+    environment:
+      - PORT=1337
+      - PARSER_SERVER_MOUNT="/parse"
+      - PARSE_APP_ID=yourAppId
+      - PARSE_MASTER_KEY=yourMasterKey
+      - PARSE_SERVER_URL=http://localhost:1337/parse
+      - PARSE_DASHBOARD_APP_NAME=yourappname
+      - PARSE_ADMIN_DASHBOARD_USERNAME=admin
+      - PARSE_ADMIN_DASHBOARD_PASSWORD=password
+      - PARSE_CLIENT_KEY=yourParseClientKey
+      - NPM_CONFIG_PRODUCTION=false
+      - MONGODB_URI="mongodb://mongo:27017"
+    expose:
+      - "1337"
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
